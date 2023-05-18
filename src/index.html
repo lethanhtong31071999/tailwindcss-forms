@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../dist/media/logo.png" />
+
+    <title>TailwindCss Form</title>
+  </head>
+
+  <body class="text-gray-700">
+    <div
+      id="app"
+      class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 px-6 lg:px-8 overflow-hidden"
+    >
+      <div class="container flex flex-col items-center">
+        <div class="w-full max-w-md">
+          <div class="w-full flex flex-col justify-center items-center">
+            <img
+              class="h-12 w-auto"
+              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+              alt="Workflow"
+            />
+            <h2 class="text-3xl font-extrabold text-gray-900 mt-6">
+              Create your account
+            </h2>
+            <p class="mt-2 text-gray-600 text-sm max-w">
+              Already registered?
+              <a
+                href="#"
+                class="text-indigo-600 font-medium hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                >Sign in
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 w-full max-w-md">
+          <div class="py-8 px-6 shadow-md rounded-lg sm:px-10 bg-white">
+            <form action="#" method="post" class="mb-0 space-y-6">
+              <div>
+                <label class="block font-medium text-sm" for="email"
+                  >Email address</label
+                >
+                <div class="mt-1">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block font-medium text-sm" for="password"
+                  >Password</label
+                >
+                <div class="mt-1 relative">
+                  <input
+                    required
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="current-password"
+                  />
+                  <a
+                    class="inline-block absolute top-1/2 right-3 -translate-y-1/2 hover:cursor-pointer group"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 group-hover:text-indigo-700"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <label class="block font-medium text-sm" for="password">
+                  Password confirmation
+                </label>
+                <div class="mt-1 relative">
+                  <input
+                    required
+                    type="password"
+                    name="password-confirmation"
+                    id="password-confirmation"
+                  />
+                  <a
+                    class="inline-block absolute top-1/2 right-3 -translate-y-1/2 hover:cursor-pointer group"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 group-hover:text-indigo-700"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <label class="block font-medium text-sm">Gender</label>
+                <div class="mt-1 flex gap-x-4">
+                  <div class="flex items-center gap-x-2">
+                    <input type="radio" name="gender" id="gender-male" />
+                    <label for="gender-male" class="font-medium text-sm">
+                      Male
+                    </label>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input type="radio" name="gender" id="gender-female" />
+                    <label for="gender-male" class="font-medium text-sm">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label class="block font-medium text-sm" for="password">
+                  Date of birth
+                </label>
+                <div class="mt-1">
+                  <input
+                    required
+                    type="date"
+                    name="password-confirmation"
+                    id="password-confirmation"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block font-medium text-sm" for="province">
+                  Province
+                </label>
+                <div class="mt-1">
+                  <input required type="search" name="province" id="province" />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-center justify-start gap-x-2">
+                  <input
+                    class="rounded"
+                    required
+                    type="checkbox"
+                    name="privacy-policy"
+                    id="privacy-policy"
+                  />
+                  <label
+                    class="inline-block font-medium text-sm"
+                    for="privacy-policy"
+                  >
+                    I agree to the
+                    <a class="text-indigo-600 hover:text-indigo-500" href="#"
+                      >Privacy Policy</a
+                    >
+                  </label>
+                </div>
+                <div class="flex items-center justify-start gap-x-2">
+                  <input
+                    class="rounded"
+                    required
+                    type="checkbox"
+                    name="terms-and-conditions"
+                    id="terms-and-conditions"
+                  />
+                  <label
+                    class="inline-block font-medium text-sm"
+                    for="terms-and-conditions"
+                  >
+                    I agree to the
+                    <a class="text-indigo-600 hover:text-indigo-500" href="#"
+                      >Terms</a
+                    >
+                    and
+                    <a class="text-indigo-600 hover:text-indigo-500" href="#"
+                      >Conditions</a
+                    >
+                  </label>
+                </div>
+              </div>
+              <div>
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  class="bg-indigo-600 text-white w-full border border-transparent text-sm font-medium px-4 py-2 rounded-md shadow-sm hover:cursor-pointer hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
